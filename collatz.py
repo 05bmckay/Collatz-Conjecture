@@ -24,7 +24,7 @@ z = len(y_data)
 x_data = [i for i in range(1, len(y_data) + 1)]
 
 print (y_data)    
-print (x_data)
+
 print(len(y_data))
 
 plt.plot(x_data, y_data)
