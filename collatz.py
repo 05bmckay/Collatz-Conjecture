@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 y_data = []
 
 
-
 def collatzSequence(number):
     if (number % 2 == 0): # if it's even
         number = number // 2
@@ -22,15 +21,10 @@ while (n != 1):
     n = collatzSequence(n)
 
 z = len(y_data)
-x_data = []
-
-
-for i in range (1, z+1):
-    x_data.append(i)
-
-
+x_data = [i for i in range(1, len(y_data) + 1)]
 
 print (y_data)    
+print (x_data)
 print(len(y_data))
 
 plt.plot(x_data, y_data)
